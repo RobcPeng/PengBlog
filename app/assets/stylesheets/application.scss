@@ -1,0 +1,234 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'normalize';
+
+ html, body {
+  font-family: 'arial', sans-serif;
+
+ }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#sidebar {
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #F0F0F0;
+  padding: 7em 0 0 0;
+  #logo {
+    width: 40px;
+    position: absolute;
+    right: 3em;
+    top: 3em;
+  }
+  ul {
+  	list-style: none;
+  	text-align: right;
+  	padding-right: 3em;
+  	.category{
+  	  font-weight: 700;
+  	  font-size: .07em;
+  	  color: #3366cc;
+  	  text-transform: uppercase;
+  	}
+  li {
+    padding: .5em 0;
+    a{
+      text-decoration: none;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+    .active {
+    	a{
+
+    	}
+    }
+  }
+
+  .sign_in {
+    position: absolute;
+    right: 3em;
+    top: 80%;
+    font-size: .8em;
+  }
+}
+
+.clearfix:after {
+  content: ".";
+  visability: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+
+}
+
+.button{
+  outline: none;
+  background: transparent;
+  border: 1p solid #669900;
+  padding: .5em 1.5em;
+  border-radius: 1.5em;
+  &:hover {
+  	border: 1.5em solid #99000;
+  	color: #99000;
+  	a {
+  		color: #99000 !important;
+  	}
+  }
+}
+
+#main_content {
+  margin-left: 200px;
+
+  #header {
+    #padding: 1em 3em;
+    border-bottom :1px solid black #d6dce0;
+    background: #C8C8C8;
+    color: black;
+    p {
+      display: inline;
+    }
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    .buttons {
+      float: right;
+      margin-top: -6px;
+      .button {
+        font-size: .8em;
+        margin-left: .5em;
+      }
+    }
+  }
+  .post_wrapper{
+  	padding: 3em;
+  	border-bottom: 1px solid;
+  	color: black;
+  	.title{
+  	  margin: 0;
+  	}
+  	a {
+  		font-weight: 500;
+  		text-decoration: none;
+  		color: grey;
+  		font-size: 1.5em;
+  		&:hover{
+  		  color: #99000;
+  		}
+  	}
+  }
+  .date_and_author{
+
+
+  }
+}
+
+#post_content {
+  padding: 1em 3em;
+  .title {
+  	font-weight: 500;
+  	text-decoration: none;
+  	color: #99000;
+  	font-size: 2.5em;
+  	margin-bottom: 0;
+  }
+  .body{
+
+  }
+  .date_and_author {
+
+
+  }
+
+  #comments{
+    h2{
+
+    }
+    h3{
+
+    }
+  .comment{
+
+  }
+  .comment_content{
+
+  }
+  .comment_body {
+
+  }
+  .comment_time{
+
+  }
+  .button{
+
+  }
+  input[type="text"], textarea{
+
+  }
+ }
+}
+
+#page_wrapper{
+  padding: 3em;
+  #profile_image{
+  
+  	img {
+
+  	}
+  }
+  #content{
+  	h1 {
+      font-weight: 500;
+  	}
+  	p {
+      font-size: 1.1em;
+      line-height: 1.75;
+  	}
+  	a {
+      color: #33acb7;
+      font-weight: 700;
+      text-decoration: none;
+  	}
+  }
+ }
+ .links {
+ 	margin: 2em 0;
+ }
+ input[type="text"], input[type="email"], input[type="password"], textarea{
+
+ }
+ input[type="text"]{
+   height: 35px;
+ }
+ textarea{
+   min-height: 180px;
+ }
+ input[type="submit"]{
+
+ &:hover{
+
+ }
+
+}
